@@ -1,0 +1,9 @@
+#通用配置
+spring:
+  rabbitmq:
+    addresses: 172.16.102.188
+    port: 5672
+    username: admin
+    password: admin
+    
+  

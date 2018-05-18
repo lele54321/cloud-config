@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    myVraapi: #定义路由
+      path: /myVraapi/**
+      service-id: vra-api
+      sensitive-headers: #敏感头，如cookie
+      - 
+    vra-api: /myVraapi/** #简洁写法
+  ignored-patterns:
+  - /**/excludePath #拒绝某些请求
